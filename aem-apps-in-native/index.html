@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Delivering Managed Content to Your Native Apps</title>
+
+    <meta name="description" content="">
+    <meta name="author" content="Anthony Rumsey">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel=stylesheet href=css/reveal.min.css>
+    <link rel=stylesheet href=css/theme/adobe/adobe.css id=theme>
+    <link rel=stylesheet href=css/theme/adobe/custom.css>
+    <link rel=stylesheet href=lib/css/zenburn.css>
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+        document.write('<link rel="stylesheet" href="css/print/' + (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper') + '.css" type="text/css" media="print">');
+    </script>
+
+    <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+
+    <!--
+            States:
+                data-state="bg-white"
+                data-state="bg-red"
+                data-state="alert"
+                data-state="soothe"
+        -->
+
+    <div class="reveal">
+
+        <div class="slides">
+
+            <section data-state="bg-white">
+                <h2>Managed Content</h2>
+                <h3>Delivered to Your Native Apps</h3>
+                <br>
+                <br>
+                <p>Anthony Rumsey (
+                    <a href="http://twitter.com/planetrumsey">@planetrumsey</a>)</p>
+                <p class="subtext">Computer Scientist, Adobe Systems</p>
+                <br>
+                <p>
+                    <img src="img/connect-logo.png" style="box-shadow:none" />
+                </p>
+
+                <aside class="notes">
+                    <ul>
+                        <li>welcome</li>
+                    </ul>
+                </aside>
+
+            </section>
+
+            <section data-background="img/kids.jpg" data-background-transition="slide">
+
+                <h2 class="white">Compromise</h2>
+
+                <aside class="notes">
+                    <ul>
+                        <li>software development is about compromise</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>800,000+</h2>
+
+                <table class="platforms">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img class="no-bg" src="img/apple-logo.png">
+                            </td>
+                            <td>
+                                <img class="no-bg" src="img/android-logo.png">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <aside class="notes">
+                    <ul>
+                        <li>each of the Apple AppStore and Google Play store have upwards of 800,000 apps</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>2525+</h2>
+                <img src="img/pg_logo.png">
+                <p>http://phonegap.com/app/</p>
+
+                <aside class="notes">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>Hybrid Sweet Spot</h2>
+                <blockquote>So in classic disruption theory, the hybrid model is eating its way up through the complexity chain. I’d argue that the majority of information-based apps today can be successfully implemented through this approach with varying levels of the native/HTML split.</blockquote>
+                <br>
+                <br>
+                <p>David Heinemeier Hansson - Founder &amp; CTO at Basecamp</p>
+
+                <aside class="notes">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section data-state="bg-white">
+                <h2>AEM Apps</h2>
+
+                <table class="technologies">
+                    <tr>
+                        <td>
+                            <img src="img/AEM_logo.png" />
+                        </td>
+                        <td>
+                            <img src="img/pg_logo.png" />
+                        </td>
+                        <td>
+                            <img src="img/angularjs-logo.png" />
+                        </td>
+                        <td>
+                            <img src="img/cs_noun_3048.png" />
+                        </td>
+                    </tr>
+                </table>
+
+                <aside class="notes">
+                    <ul>
+                        <li>AEM - 12 years</li>
+                        <li>PhoneGap - 5 yrs</li>
+                        <li>AngularJS - 5 yrs</li>
+                        <li>CS - since 5.4</li>
+                    </ul>
+                </aside>
+            </section>
+
+
+
+            <section data-state="soothe">
+                <h2>Opportunities</h2>
+                <ul>
+                    <li>Touch</li>
+                    <li>Sensors</li>
+                    <li>Notifications</li>
+                </ul>
+
+                <aside class="notes">
+                    <ul>
+                        <li>features available to mobile devices</li>
+                        <li>Manage constraints</li>
+                        <li>Including performance, battery, connectivity</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section data-state="alert">
+                <h2>Demo time</h2>
+
+                <aside class="notes">
+                    <ul>
+                        <li>PG CLI</li>
+                        <li>open up dir, show Xcode project</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section data-state="soothe">
+                <h2>Q &amp; A</h2>
+
+                <h3>bit.ly/aem-apps-native</h3>
+
+                <img src="img/qrcode.png" />
+            </section>
+
+
+            <section>
+                <h2>References</h2>
+                <ul>
+                    <li>
+                        <a href="https://github.com/Adobe-Marketing-Cloud/app-sample-android-phonegap" target="_blank">Android + Phonegap sample with AEM</a>
+                    </li>
+                    <li>
+                        <a href="http://techland.time.com/2013/04/16/ios-vs-android/" target="_blank">Who’s Winning, iOS or Android? All the Numbers, All in One Place</a>
+                    </li>
+                </ul>
+            </section>
+
+
+
+            <!--
+                <section>
+                    
+                    <aside class="notes">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </aside>
+                </section>
+                -->
+        </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+
+    <script>
+        Reveal.initialize({
+            controls: false,
+            progress: true,
+            history: true,
+            center: true,
+
+            theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+            transition: 'linear', // default/cube/page/concave/zoom/linear/none
+
+            // Optional libraries used to extend on reveal.js
+            dependencies: [{
+                    src: 'lib/js/classList.js',
+                    condition: function() {
+                        return !document.body.classList;
+                    }
+                }, {
+                    src: 'plugin/markdown/showdown.js',
+                    condition: function() {
+                        return !!document.querySelector('[data-markdown]');
+                    }
+                }, {
+                    src: 'plugin/markdown/markdown.js',
+                    condition: function() {
+                        return !!document.querySelector('[data-markdown]');
+                    }
+                }, {
+                    src: 'plugin/highlight/highlight.js',
+                    async: true,
+                    callback: function() {
+                        hljs.initHighlightingOnLoad();
+                    }
+                }, {
+                    src: 'plugin/zoom-js/zoom.js',
+                    async: true,
+                    condition: function() {
+                        return !!document.body.classList;
+                    }
+                }, {
+                    src: 'plugin/notes/notes.js',
+                    async: true,
+                    condition: function() {
+                        return !!document.body.classList;
+                    }
+                }
+
+            ]
+        });
+    </script>
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-41891145-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+</body>
+
+</html>
