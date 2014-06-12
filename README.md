@@ -1,4 +1,4 @@
-presentations
+My Presentations
 =============
 
-Presentations I have done in the past.
+My presentation repository.
