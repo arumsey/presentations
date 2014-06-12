@@ -9,11 +9,10 @@
     border: none;
 }
 .reveal section .banner {
-    color: #FFF;
     font-weight: bold;
     font-size: 3em;
     padding: 1rem;
-    background-color: rgba(0, 164, 228, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 .bg-white h2,
 .bg-white h3,
@@ -40,13 +39,21 @@ td > img.watermark {
     height: 100%;
     opacity: 0.3;
 }
-table.compromise td {
-    padding: 1em .8em;
-    vertical-align: middle;
-    text-align: center;
+table.compromise.tasks td {   
+    background: rgba(255, 255, 255, .15);
+    border: none;
+    color: #e4dfd9;
     width: 50%;
 }
+table.compromise tr:last-child td {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+table.tasks {
+    padding: 1em;
+}
 table.tasks td {
+    position: relative;
     background-color: #FFF;
     color: #333;
     border-right: 4px solid #FFF;
@@ -57,9 +64,6 @@ table.tasks td {
 }
 table.tasks tr:first-child td {
     padding-bottom: 0;
-}
-table.tasks {
-    padding: 1em;
 }
 table.tasks tr.numbers td {
     text-align: center;
@@ -74,14 +78,4 @@ table.platforms td {
 }
 table.platforms td > * {
     text-align: center;
-}
-table.compromise td {
-    width: 50%;
-    vertical-align: middle;
-}
-table.tasks td {
-    position: relative;
-}
-table.tasks p {
-    color: #002847;
 }
