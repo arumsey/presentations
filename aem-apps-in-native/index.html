@@ -153,7 +153,7 @@
                                 <h3>800,000</h3>
                             </td>
                             <td>
-                                <h3>2525</h3>
+                                <h3>2597</h3>
                             </td>
                         </tr>
                     </tbody>
@@ -161,7 +161,7 @@
 
                 <aside class="notes">
                     <ul>
-                        <li>each of the Apple AppStore and Google Play store have upwards of 800,000 apps</li>
+                        <li>each of the respective app stores have upwards of 800,000 apps</li>
                         <li>comparatively Phonegap lists around 2500 apps</li>
                     </ul>
                 </aside>
@@ -176,7 +176,9 @@
 
                 <aside class="notes">
                     <ul>
-                        <li></li>
+                        <li>came across this quote from the Basecamp blog</li>
+                        <li>even when developing a new mobile app there is a sweet spot when choosing between native/web</li>
+                        <li>any number of reasons (dev expertise, app experience, time to market)</li>
                     </ul>
                 </aside>
             </section>
@@ -222,6 +224,7 @@
                 <aside class="notes">
                     <ul>
                         <li>existing Android app</li>
+                        <li>simple app with three fragment views</li>
                     </ul>
                 </aside>
             </section>
@@ -237,13 +240,13 @@
                     </tr>
                     <tr>
                         <td>
-                            <img class="watermark" src="img/AEM_logo.png" />
-                            <p>Build AEM Web Content</p>
-                        </td>
-                        <td>
                             <img class="watermark" src="img/android-logo.png" />
                             <p>Augment Android App</p>
                         </td>
+                        <td>
+                            <img class="watermark" src="img/AEM_logo.png" />
+                            <p>Build AEM Web Content</p>
+                        </td>                        
                         <td>
                             <img class="watermark" src="img/code.png" />
                             <p>Integrate native &amp; web</p>
@@ -256,31 +259,7 @@
                 </table>
                 <aside class="notes">
                     <ul>
-                        <li>3 steps to get managed content into your native app</li>
-                    </ul>
-                </aside>
-            </section>
-
-            <section>
-                <h2>Build Web Content</h2>
-
-                <ul>
-                    <li class="fragment highlight-current-blue">Design</li>
-                    <li class="fragment highlight-current-blue">Components
-                        <ul>
-                            <li>splash page</li>
-                            <li>home page</li>
-                            <li>custom</li>
-                        </ul>
-                    </li>
-                    <li class="fragment highlight-current-blue">Content Sync</li>
-                    <li class="fragment highlight-current-blue">Content</li>
-                </ul>
-
-                <aside class="notes">
-                    <ul>
-                        <li>build up web content using typical AEM workflows</li>
-                        <li>make use base AEM app components for routing/updates/controllers</li>
+                        <li>proposed set of tasks to build hybrid mobile app with AEM content</li>
                     </ul>
                 </aside>
             </section>
@@ -288,7 +267,6 @@
             <section>
                 <h2>Augment Android App</h2>
                 <h3>Layout</h3>
-
                 <pre>
                     <code class="xml" data-trim>
 
@@ -306,7 +284,7 @@
                     </ul>
                 </aside>
             </section>
-
+            
             <section>
                 <h2>Augment Android App</h2>
                 <h3>Fragment</h3>
@@ -334,8 +312,32 @@ public class HomeFragment extends Fragment implements CordovaInterface {
 
                 <aside class="notes">
                     <ul>
-                        <li>implement Corodova Interface</li>
+                        <li>implement Corodova Interface in existing fragment</li>
                         <li>inflate Cordova layout</li>
+                    </ul>
+                </aside>
+            </section>
+
+                        <section>
+                <h2>Build Web Content</h2>
+
+                <ul>
+                    <li class="fragment highlight-current-blue">Design</li>
+                    <li class="fragment highlight-current-blue">Components
+                        <ul>
+                            <li>splash page</li>
+                            <li>home page</li>
+                            <li>custom</li>
+                        </ul>
+                    </li>
+                    <li class="fragment highlight-current-blue">Content Sync</li>
+                    <li class="fragment highlight-current-blue">Content</li>
+                </ul>
+
+                <aside class="notes">
+                    <ul>
+                        <li>build up web content using typical AEM workflows</li>
+                        <li>make use base AEM app components for routing/updates/controllers</li>
                     </ul>
                 </aside>
             </section>
@@ -413,12 +415,20 @@ public class HomeFragment extends Fragment implements CordovaInterface {
                         <a href="https://github.com/Adobe-Marketing-Cloud/app-sample-android-phonegap" target="_blank">Android + Phonegap sample with AEM</a>
                     </li>
                     <li>
+                        <a href="https://github.com/Adobe-Marketing-Cloud/app-sample-android-phonegap/wiki/Embed-Webview-in-Android-Fragment" target="_blank">Embedding a Cordova WebView into an Android fragment</a>
+                    </li>                    
+                    <li>
                         <a href="http://techland.time.com/2013/04/16/ios-vs-android/" target="_blank">Who’s Winning, iOS or Android? All the Numbers, All in One Place</a>
                     </li>
                     <li>
                         <a href="https://signalvnoise.com/posts/3743-hybrid-sweet-spot-native-navigation-web-content" target="_blank">Hybrid Sweet Spot</a>
                     </li>
-
+                    <li>
+                        <a href="http://phonegap.com/app/" target="_blank">PhoneGap</a>
+                    </li>
+                    <li>
+                        <a href="http://enterprise.phonegap.com/" target="_blank">PhoneGap Enterprise</a>
+                    </li>
 
                 </ul>
             </section>
