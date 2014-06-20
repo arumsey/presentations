@@ -244,16 +244,16 @@
                             <p>Augment Android App</p>
                         </td>
                         <td>
+                            <img class="watermark" src="img/buildbot-hero.png" />
+                            <p>Plugins!</p>
+                        </td>
+                        <td>
                             <img class="watermark" src="img/AEM_logo.png" />
                             <p>Build AEM Web Content</p>
                         </td>                        
                         <td>
                             <img class="watermark" src="img/code.png" />
                             <p>Integrate native &amp; web</p>
-                        </td>
-                        <td>
-                            <img class="watermark" src="img/buildbot-hero.png" />
-                            <p>Plugins!</p>
                         </td>
                     </tr>
                 </table>
@@ -319,6 +319,37 @@ public class HomeFragment extends Fragment implements CordovaInterface {
             </section>
 
                         <section>
+                <h2>Plugins</h2>
+
+                <pre>
+                    <code>public class Navigation extends CordovaPlugin {
+
+    @Override
+    public boolean execute(String action, CordovaArgs args,
+            final CallbackContext callbackContext) throws JSONException {
+
+        if ("navigate".equals(action)) {
+            this.cordova.getActivity().runOnUiThread(new Runnable() {
+                public void run() {
+                    navigateSync(args, callbackContext);
+                }
+            });
+            return true;
+        }
+        return false;
+    }
+}</code>
+                </pre>
+
+                <aside class="notes">
+                    <ul>
+                        <li>add custom plugins to allow web content to interact with native</li>
+                    </ul>
+                </aside>
+            </section>
+
+
+                        <section>
                 <h2>Build Web Content</h2>
 
                 <ul>
@@ -355,37 +386,6 @@ public class HomeFragment extends Fragment implements CordovaInterface {
                     <ul>
                         <li>download and build web content using phonegap cli</li>
                         <li>copy assets to native project</li>
-                    </ul>
-                </aside>
-            </section>
-
-
-            <section>
-                <h2>Plugins</h2>
-
-                <pre>
-                    <code>public class Navigation extends CordovaPlugin {
-
-    @Override
-    public boolean execute(String action, CordovaArgs args, 
-            final CallbackContext callbackContext) throws JSONException {
-            
-        if ("navigate".equals(action)) {
-            this.cordova.getActivity().runOnUiThread(new Runnable() {
-                public void run() {
-                    navigateSync(args, callbackContext);
-                }
-            });
-            return true;
-        }
-        return false;
-    }
-}</code>
-                </pre>
-
-                <aside class="notes">
-                    <ul>
-                        <li>add custom plugins to allow web content to interact with native</li>
                     </ul>
                 </aside>
             </section>
