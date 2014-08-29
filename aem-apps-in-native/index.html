@@ -56,7 +56,7 @@
                 <p class="subtext">Computer Scientist, Adobe Systems</p>
                 <br>
                 <p>
-                    <img src="img/connect-logo.png" style="box-shadow:none" />
+                    <img src="img/AEM_logo.png" style="box-shadow:none" />
                 </p>
 
                 <aside class="notes">
@@ -84,7 +84,7 @@
 
             <section data-background="img/kids.jpg" data-background-transition="slide">
 
-                <h2 class="fragment banner">Compromise</h2>
+                <h2 class="banner">Compromise</h2>
 
                 <aside class="notes">
                     <ul>
@@ -94,7 +94,7 @@
             </section>
 
             <section data-state="bg-white">
-                <h2>AEM Apps</h2>
+                <h2>PhoneGap Enterprise</h2>
                 <table class="technologies">
                     <tr>
                         <td>
@@ -111,9 +111,9 @@
                         </td>
                     </tr>
                 </table>
-                <h3 class="fragment">managed content</h3>
+                <h3>managed content</h3>
                 <p>+</p>
-                <h3 class="fragment">proven open source tech</h3>
+                <h3>proven open source tech</h3>
 
                 <aside class="notes">
                     <ul>
@@ -240,20 +240,20 @@
                     </tr>
                     <tr>
                         <td>
+                            <img class="watermark" src="img/AEM_logo.png" />
+                            <p>Create AEM Content</p>
+                        </td>
+                        <td>
                             <img class="watermark" src="img/android-logo.png" />
                             <p>Augment Android App</p>
                         </td>
                         <td>
-                            <img class="watermark" src="img/buildbot-hero.png" />
-                            <p>Plugins!</p>
+                            <img class="watermark" src="img/code.png" />
+                            <p>Integrate native &amp; AEM</p>
                         </td>
                         <td>
-                            <img class="watermark" src="img/AEM_logo.png" />
-                            <p>Build AEM Web Content</p>
-                        </td>                        
-                        <td>
-                            <img class="watermark" src="img/code.png" />
-                            <p>Integrate native &amp; web</p>
+                            <img class="watermark" src="img/buildbot-hero.png" />
+                            <p>Plugins!</p>
                         </td>
                     </tr>
                 </table>
@@ -263,6 +263,42 @@
                     </ul>
                 </aside>
             </section>
+
+            <section>
+                <h2>Create Content</h2>
+
+                <ul>
+                    <li class="fragment highlight-current-blue">Design</li>
+                    <li class="fragment highlight-current-blue">Components
+                        <ul>
+                            <li>splash page</li>
+                            <li>home page</li>
+                            <li>custom</li>
+                        </ul>
+                    </li>
+                    <li class="fragment highlight-current-blue">Content Sync</li>
+                    <li class="fragment highlight-current-blue">Content</li>
+                </ul>
+
+                <aside class="notes">
+                    <ul>
+                        <li>build up web content using typical AEM workflows</li>
+                        <li>make use base AEM app components for routing/updates/controllers</li>
+                    </ul>
+                </aside>
+            </section>
+
+<section class="present" style="top: -350px; display: block;">
+
+                    <iframe src="http://localhost:4503/content/phonegap/pgeconf/apps/ng-homepage-webview/splash/home.html" width="400" height="600"></iframe>
+                    <br>
+
+                    <aside class="notes">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </aside>
+                </section>
 
             <section>
                 <h2>Augment Android App</h2>
@@ -318,7 +354,24 @@ public class HomeFragment extends Fragment implements CordovaInterface {
                 </aside>
             </section>
 
-                        <section>
+            <section>
+                <h2>Integrate</h2>
+
+                <ul>
+                    <li class="fragment highlight-current-blue">Download content package</li>
+                    <li class="fragment highlight-current-blue">Phonegap Build</li>
+                    <li class="fragment highlight-current-blue">Copy Assets</li>
+                </ul>
+
+                <aside class="notes">
+                    <ul>
+                        <li>download and build web content using phonegap cli</li>
+                        <li>copy assets to native project</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
                 <h2>Plugins</h2>
 
                 <pre>
@@ -344,48 +397,6 @@ public class HomeFragment extends Fragment implements CordovaInterface {
                 <aside class="notes">
                     <ul>
                         <li>add custom plugins to allow web content to interact with native</li>
-                    </ul>
-                </aside>
-            </section>
-
-
-                        <section>
-                <h2>Build Web Content</h2>
-
-                <ul>
-                    <li class="fragment highlight-current-blue">Design</li>
-                    <li class="fragment highlight-current-blue">Components
-                        <ul>
-                            <li>splash page</li>
-                            <li>home page</li>
-                            <li>custom</li>
-                        </ul>
-                    </li>
-                    <li class="fragment highlight-current-blue">Content Sync</li>
-                    <li class="fragment highlight-current-blue">Content</li>
-                </ul>
-
-                <aside class="notes">
-                    <ul>
-                        <li>build up web content using typical AEM workflows</li>
-                        <li>make use base AEM app components for routing/updates/controllers</li>
-                    </ul>
-                </aside>
-            </section>
-
-            <section>
-                <h2>Integrate</h2>
-
-                <ul>
-                    <li class="fragment highlight-current-blue">Download content package</li>
-                    <li class="fragment highlight-current-blue">Phonegap Build</li>
-                    <li class="fragment highlight-current-blue">Copy Assets</li>
-                </ul>
-
-                <aside class="notes">
-                    <ul>
-                        <li>download and build web content using phonegap cli</li>
-                        <li>copy assets to native project</li>
                     </ul>
                 </aside>
             </section>
