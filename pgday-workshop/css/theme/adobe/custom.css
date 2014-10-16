@@ -1,0 +1,94 @@
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+
+.reveal p.subtext {
+    font-size: 0.9em;
+}
+.reveal section img {
+    border: none;
+}
+.reveal section .banner {
+    font-weight: bold;
+    font-size: 3em;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.bg-white h2,
+.bg-white h3,
+.bg-white h4,
+.bg-white h5,
+.bg-white ul {
+    color: #333;
+}
+.reveal section img.no-bg {
+    background: none;
+    box-shadow: none;
+}
+/* Tables */
+
+table {
+    width: 100%
+}
+td > img.watermark {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}
+table.compromise.tasks td {   
+    background: rgba(255, 255, 255, .15);
+    border: none;
+    color: #e4dfd9;
+    width: 50%;
+}
+table.compromise tr:last-child td {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+table.tasks {
+    padding: 1em;
+}
+table.tasks td {
+    position: relative;
+    background-color: #FFF;
+    color: #333;
+    border-right: 4px solid #FFF;
+    padding: 1em .8em;
+    width: 25%;
+    vertical-align: middle;
+    text-align: center;
+}
+table.tasks tr:first-child td {
+    padding-bottom: 0;
+}
+table.tasks tr.numbers td {
+    text-align: center;
+}
+table.technologies td {
+    width: 25%;
+    vertical-align: middle;
+}
+table.platforms td {
+    width: 33%;
+    vertical-align: middle;
+}
+table.platforms td > * {
+    text-align: center;
+}
+
+.single-line {
+    position: relative;
+    height: 100px;
+}
+
+.single-line h2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
