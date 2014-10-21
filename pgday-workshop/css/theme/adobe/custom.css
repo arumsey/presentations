@@ -1,7 +1,10 @@
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
-
+.reveal section img.clean {
+    box-shadow: none;
+    background: rgba(255,255,255,0);
+}
 .reveal p.subtext {
     font-size: 0.9em;
 }
@@ -39,20 +42,11 @@ td > img.watermark {
     height: 100%;
     opacity: 0.3;
 }
-table.compromise.tasks td {   
-    background: rgba(255, 255, 255, .15);
-    border: none;
-    color: #e4dfd9;
-    width: 50%;
-}
-table.compromise tr:last-child td {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-table.tasks {
+
+table.col {
     padding: 1em;
 }
-table.tasks td {
+table.col td {
     position: relative;
     background-color: #FFF;
     color: #333;
@@ -62,21 +56,28 @@ table.tasks td {
     vertical-align: middle;
     text-align: center;
 }
-table.tasks tr:first-child td {
+table.col tr:first-child td {
     padding-bottom: 0;
 }
-table.tasks tr.numbers td {
+table.col tr.numbers td {
     text-align: center;
 }
-table.technologies td {
+table.col img.fragment {
+    position:absolute;
+    top:1em;
+    left:0.8em;
+}
+table.4col td {
     width: 25%;
     vertical-align: middle;
 }
-table.platforms td {
+table.3col td {
     width: 33%;
     vertical-align: middle;
 }
-table.platforms td > * {
+
+table.4col td > *,
+table.3col td > * {
     text-align: center;
 }
 

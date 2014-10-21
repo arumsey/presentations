@@ -58,6 +58,11 @@
     background: -ms-radial-gradient(center, ellipse cover, #4f0a11 0%, black 100%);
     background: radial-gradient(center, ellipse cover, #4f0a11 0%, black 100%);
 }
+
+.bg-blue .reveal .state-background {
+    background-color: #27a1c5;
+}
+
 .bg-brown .reveal {
     color: #dadde0;
 }
