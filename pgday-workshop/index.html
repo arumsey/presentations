@@ -17,8 +17,6 @@
     <link rel=stylesheet href=css/reveal.min.css>
     <link rel=stylesheet href=css/theme/adobe/adobe.css id=theme>
     <link rel=stylesheet href=css/theme/adobe/custom.css>
-    <link rel=stylesheet href=lib/css/zenburn.css>
-
     <!-- For syntax highlighting -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
 
@@ -27,9 +25,6 @@
         document.write('<link rel="stylesheet" href="css/print/' + (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper') + '.css" type="text/css" media="print">');
     </script>
 
-    <!--[if lt IE 9]>
-        <script src="lib/js/html5shiv.js"></script>
-        <![endif]-->
 </head>
 
 <body>
@@ -37,6 +32,8 @@
     <!--
             States:
                 data-state="bg-white"
+data-state="bg-blue"
+data-state="bg-brown"
                 data-state="bg-red"
                 data-state="alert"
                 data-state="soothe"
@@ -47,13 +44,13 @@
         <div class="slides">
 
             <section data-state="bg-white">
-                <h2>PhoneGap Essentials Workshop</h2>
+                <h2>PhoneGap Day: Workshop</h2>
                 <h3>PhoneGap Enterprise</h3>
                 <br>
                 <br>
                 <p>Anthony Rumsey (
                     <a href="http://twitter.com/planetrumsey">@planetrumsey</a>)</p>
-                <p class="subtext">Computer Scientist, Adobe Systems</p>
+                <p class="subtext">Adobe</p>
                 <br>
                 <p>
                     <img src="img/pge-tie.png" style="box-shadow:none" />
@@ -66,105 +63,94 @@
                 </aside>
 
             </section>
-
-
-            <section data-state="bg-blue">
-                <img src="img/feature1.png" class="clean"/>
-                <h2>Beginner</h2>
-            </section>
-
+            
             <section data-state="bg-white">
-                <h2>PhoneGap Enterprise?</h2>
-
-                <table class="col 3col">
-                    <tr>
-                        <td>
-                            <img src="img/pg_logo.png" />
-                        </td>
-                        <td>
-                            <img class="clean" src="img/plus-circle.png" />
-                        </td>
-                        <td>
-                            <div class="">
-                            <img class="fragment fade-out" data-auto-advance="true" src="img/mac_logo.png"/>
-                            <img class="fragment fade-in" src="img/AEM_logo.png"/>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-                <h4>open source mobile development framework</h4>
-                <p>+</p>
-                <h4>managed content</h4>
+                <h3>PhoneGap Enterprise Developer Lab</h3>
+                <img src="img/summit-lab-github.png" class="clean"/>
+                <h6>(the abbreviated version)</h6>
                 
                 <aside class="notes">
-                    <p>Beginner</p>
+                    for the rest of this workshop I am going to attempt to cover
+                    portions of the much longer developer lab I have given in the past
+                </aside>
+                
+            </section>                        
+            
+            <section data-state="bg-blue">
+                <img src="img/pgday.png" class="clean"/>
+                <h2>PhoneGap Day App</h2>
+            </section>
+
+            <section data-state="bg-white">
+                <img src="img/pgday-appstore.png" class="clean"/>
+            </section>            
+            
+            <section data-state="bg-blue">                
+                <h2>What is PhoneGap Enterprise?</h2>
+                <img src="img/pge-google.gif" class="clean"/>
+            </section>    
+            
+            <section data-state="bg-blue">
+                <img src="img/feature1.png" class="clean"/>
+                <h3>Enterprise mobile application development and management across channels and platforms.</h3>
+            </section>
+            
+            <section data-state="bg-blue">
+                <img src="img/feature2.png" class="clean"/>
+                <h3>Add the power of Adobe's Marketing Cloud to all your mobile applications.</h3>
+            </section>
+            
+            <section data-state="bg-white">
+                <h3>Powered by Adobe Experience Manager</h3>
+                <img src="img/total-control.png" class="clean" />
+
+                <h4>a mobile app development platform</h4>
+                
+                <aside class="notes">
                     <ul>
-                        <li>The "why"</li>
-                        <li>add app to MAC and show on PGE</li>
+                        <li>the integration of PhoneGap and managed content</li>
                     </ul>
                 </aside>
 
             </section>
-
-            <section data-state="bg-blue">
-                <img src="img/aem-appz_sm.png" class="clean"/>
-                <h2>Advanced</h2>
-            </section>
-
+            
             <section data-state="bg-white">
-                <h2>Content Authoring</h2>
-
-                <table class="col 3col">
+                <h3>In a nutshell...</h3>
+                <ul>
+                    <li>Manage all apps from one interface in Experience Manager</li>
+                    <li>Distribute apps directly to stakeholders to test &amp; monitor</li>
+                    <li>Business teams can update ap using simple interface</li>
+                    <li>Publish app updates directly to all platforms</li>
+                    <li>Integrated with Marketing Cloud solutions</li>
+                </ul>
+                <img src="img/aem-ui.png" class="clean"/>
+            </section>             
+                        
+            <section data-state="bg-white">
+                <h3>Let's look at some code</h3>
+                <table class="col 2col">
                     <tr>
                         <td>
-                            <img src="img/AEM_logo.png" />
+                            <img src="img/aem-appz_sm.png" />
                         </td>
                         <td>
-                            <img src="img/cs_noun_3048.png" />
-                        </td>
-                        <td>
-                            <img src="img/buildbot-hero.png" />
+                            <img src="img/pge-logo.png" />
                         </td>
                     </tr>
                 </table>
-
+                
                 <ul>
-                    <li>leverage content authoring</li>
-                    <li>package it all up</li>
-                    <li>build away!</li>
-                </ul>
-
+                    <li>develop components</li>
+                    <li>author content</li>
+                    <li>test &amp; manage app</li>
+                </ul>  
+                
                 <aside class="notes">
-                    <p>Advanced</p>
-                    <ul>
-                        <li>Page editing &amp; content update</li>
-                        <li>use kitchen sink app as an example in AEM</li>
-                    </ul>
+                    
                 </aside>
 
             </section>
-
-            <section data-state="bg-blue">
-                <img src="img/feature3.png" class="clean" />
-                <h2>God Mode</h2>
-            </section>
-
-            <section data-state="bg-white">
-                <h2>Total Control</h2>
-                <img src="img/total-control.png" class="clean" />
-
-                <aside class="notes">
-                    <p>God mode</p>
-                    <ul>
-                        <li>Show event app backed by AEM data take app from General session</li>
-                        <li>add to AEM</li>
-                        <li>Demo control center</li>
-                        <li>Analytics</li>
-                    </ul>
-                </aside>
-
-            </section>
-
+                
             <section data-state="bg-brown">
                 <img src="img/hero-shorty.png" class="clean"/>
                 <h2>Questions?</h2>
